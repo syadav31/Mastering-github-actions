@@ -1,0 +1,21 @@
+name: CI Build
+
+on:
+
+  push:
+    branches: main
+
+  pull_request: 
+    branches: main
+
+jobs:
+  build:
+    runs_on: ubuntu-latest
+  steps:
+    - name: Checkout Code
+      uses: actions/checkout@v4
+
+    - name: Hello
+      run: echo hello
+  
+  
