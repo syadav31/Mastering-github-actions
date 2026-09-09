@@ -1,18 +1,17 @@
-name: CI Build
+name: CI Build by Sunil
 
 on:
   push:
-    branches: [main]
+    branches: main
+  
   pull_request:
-    branches: [main]
+    branches: main
 
 jobs:
   build:
     runs-on: ubuntu-latest
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-      - name: hello
-        run: echo Hello
-   
-  
+    steps: Checkout
+    uses: actions/checkout@v4
+
+    steps: run a script
+    run: echo "Hello, World!"
