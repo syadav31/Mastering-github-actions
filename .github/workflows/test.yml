@@ -1,6 +1,8 @@
 name: CI Build by Sunil
 
 on:
+  workflow_dispatch:
+
   push:
     branches:
       - main
